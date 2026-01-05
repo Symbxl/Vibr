@@ -1,0 +1,58 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--color-primary, #61dafb);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--color-primary, #61dafb);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Variants */
+.default {
+  text-decoration: none;
+}
+
+.default:hover {
+  text-decoration: underline;
+}
+
+.subtle {
+  color: var(--color-text-secondary, #6c757d);
+}
+
+.subtle:hover {
+  color: var(--color-primary, #61dafb);
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.underline:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* External icon */
+.externalIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.125rem;
+}
+
+.externalIcon svg {
+  width: 0.75em;
+  height: 0.75em;
+}

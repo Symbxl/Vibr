@@ -155,13 +155,13 @@ function App(): ReactElement {
 
                 {/* Trusted By */}
                 <section className={styles.trustedSection}>
-                  <p className={styles.trustedText}>Trusted by developers at</p>
+                  <p className={styles.trustedText}>Works with your favorite tools</p>
                   <div className={styles.trustedLogos}>
-                    <span className={styles.companyLogo}>Stripe</span>
-                    <span className={styles.companyLogo}>Vercel</span>
-                    <span className={styles.companyLogo}>Notion</span>
-                    <span className={styles.companyLogo}>Linear</span>
-                    <span className={styles.companyLogo}>Figma</span>
+                    <span className={styles.companyLogo}>React</span>
+                    <span className={styles.companyLogo}>TypeScript</span>
+                    <span className={styles.companyLogo}>Node.js</span>
+                    <span className={styles.companyLogo}>Python</span>
+                    <span className={styles.companyLogo}>GraphQL</span>
                   </div>
                 </section>
 

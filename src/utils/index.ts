@@ -146,6 +146,7 @@ export function setStorageItem<T>(key: string, value: T): void {
   try {
     localStorage.setItem(key, JSON.stringify(value));
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Failed to save to localStorage:', error);
   }
 }
@@ -159,6 +160,7 @@ export function removeStorageItem(key: string): void {
   try {
     localStorage.removeItem(key);
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('Failed to remove from localStorage:', error);
   }
 }

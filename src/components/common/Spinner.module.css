@@ -9,11 +9,11 @@
 }
 
 .track {
-  stroke: rgba(97, 218, 251, 0.2);
+  stroke: var(--color-primary-light, #eef2ff);
 }
 
 .progress {
-  stroke: var(--color-primary, #61dafb);
+  stroke: var(--color-primary, #6366f1);
   stroke-dasharray: 80 200;
   stroke-dashoffset: 0;
   animation: dash 1.5s ease-in-out infinite;

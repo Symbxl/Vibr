@@ -40,10 +40,14 @@ interface BreakpointState {
 }
 
 export function useBreakpoints(): BreakpointState {
-  const isMobile = !useMediaQuery(`(min-width: ${BREAKPOINTS.md}px)`);
-  const isTablet = useMediaQuery(`(min-width: ${BREAKPOINTS.md}px)`) && !useMediaQuery(`(min-width: ${BREAKPOINTS.lg}px)`);
-  const isDesktop = useMediaQuery(`(min-width: ${BREAKPOINTS.lg}px)`);
-  const isLargeDesktop = useMediaQuery(`(min-width: ${BREAKPOINTS.xl}px)`);
+  const isAboveMd = useMediaQuery(`(min-width: ${BREAKPOINTS.md}px)`);
+  const isAboveLg = useMediaQuery(`(min-width: ${BREAKPOINTS.lg}px)`);
+  const isAboveXl = useMediaQuery(`(min-width: ${BREAKPOINTS.xl}px)`);
+
+  const isMobile = !isAboveMd;
+  const isTablet = isAboveMd && !isAboveLg;
+  const isDesktop = isAboveLg;
+  const isLargeDesktop = isAboveXl;
 
   return { isMobile, isTablet, isDesktop, isLargeDesktop };
 }
